@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    font-family: "Red Hat Text", sans-serif;
+    color: rgb(204, 204, 204);
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    font-size: 2em;
+    padding-top: 1em;
+}
+
+#title {
+    font-family: "Special Elite", cursive;
+    font-size: 4em;
+    margin-bottom: 1px;
+    color: white;
+    margin-top: 0.1px;
+}
+
+#sub-title {
+    margin-top: 1px;
+    font-size: 0.8em;
+}
+
+#img-div {
+    margin: 0;
+    padding: 5% 2%;
+    background: linear-gradient(
+        90deg,
+        rgb(37, 37, 37) 0%,
+        rgba(0, 0, 0, 1) 20%,
+        rgba(0, 0, 0, 1) 80%,
+        rgb(37, 37, 37) 100%
+    );
+}
+
+#image {
+    width: 40%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: 0.1rem solid white;
+}
+
+#img-caption {
+    font-size: 0.8em;
+}
+
+h2,
+strong {
+    color: white;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 1%;
+    display: flex;
+}
+
+.col1 {
+    width: 50%;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    padding: 1%;
+}
+.col2 {
+    padding: 1%;
+    width: 50%;
+    border-right: 1px solid white;
+}
+
+.col2 > li:last-child{
+    margin-bottom: auto;
+}
+
+li {
+    text-align: justify;
+    margin-bottom: .6em;
+}
+
+footer {
+    background-color: rgb(37, 37, 37);
+    padding: 2%;
+}
+
+footer > p {
+    color: white;
+    margin: 0;
+}
+
+a {
+    color: rgb(0, 225, 255);
+}
+
+@media (max-width: 1500px) {
+    body {
+        font-size: 1.6em;
+    }
+    #image {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        font-size: 1.4em;
+    }
+    #image {
+        width: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    #image {
+        width: 60%;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    .col1,
+    .col2 {
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-left: 1px solid white;
+    }
+}
+
+@media (max-width: 768px) {
+    #title {
+        font-size: 3em;
+    }
+    #image {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 1em;
+    }
+    #title{
+        font-size: 2.5em;
+    }
+    main > p > br {
+        display: none;
+    }
+    #image {
+        width: 80%;
+    }
+}
+
