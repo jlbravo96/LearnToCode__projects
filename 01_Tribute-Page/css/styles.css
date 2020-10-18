@@ -99,7 +99,11 @@ footer > p {
 }
 
 a {
-    color: rgb(0, 225, 255);
+    color: rgb(134, 134, 134);
+}
+
+a:hover{
+    color:cyan;
 }
 
 @media (max-width: 1500px) {

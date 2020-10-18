@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+            Thank you for taking the time to help us improve the platform
+        </p>
+
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="fname"
+                    placeholder="Enter your name"
+                    required
+                    class="form-control"
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                    class="form-control"
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Age (optional)</label>
+                <input
+                    type="number"
+                    id="number"
+                    name="age"
+                    placeholder="Age"
+                    min="13"
+                    max="110"
+                    class="form-control"
+                />
+            </div>
+
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select class="form-control" name="current-role" id="dropdown">
+                    <option value="selcCurrtRole">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="fullTmJb">Full Time Job</option>
+                    <option value="fullTmLnr">Full Time Learner</option>
+                    <option value="pfrNotToSay">Prefer Not To Say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+
+                <label class="label-input" for="definitely">
+                    <input
+                        type="radio"
+                        name="recommend"
+                        id="definitely"
+                        value="definitely"
+                        class="input-radio"
+                    />
+                    Definitely
+                </label>
+
+                <label
+                    ><input
+                        type="radio"
+                        name="recommend"
+                        id="maybe"
+                        value="maybe"
+                        class="input-radio"
+                    />
+                    Maybe</label
+                >
+
+                <label for="NotSure"
+                    ><input
+                        type="radio"
+                        name="recommend"
+                        id="NotSure"
+                        value="NotSure"
+                        class="input-radio"
+                    />
+                    Not Sure</label
+                >
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What would you like to see improved? (Check all that apply)
+                </p>
+
+                <label for="impOp1"
+                    ><input
+                        type="checkbox"
+                        class="input-checkbox"
+                        name="improve"
+                        id="impOp1"
+                        value="front-end-projects"
+                    />
+                    Front-end Projects</label
+                >
+
+                <label for="impOp2"
+                    ><input
+                        type="checkbox"
+                        class="input-checkbox"
+                        name="improve"
+                        id="impOp2"
+                        value="back-end-projects"
+                    />
+                    Back-end Projects</label
+                >
+
+                <label for="impOp3"
+                    ><input
+                        type="checkbox"
+                        class="input-checkbox"
+                        name="improve"
+                        id="impOp3"
+                        value="data-visualization"
+                    />
+                    Data Visualization</label
+                >
+
+                <label for="impOp4"
+                    ><input
+                        type="checkbox"
+                        class="input-checkbox"
+                        name="improve"
+                        id="impOp4"
+                        value="challenges"
+                    />
+                    Challenges</label
+                >
+
+                <label for="impOp5"
+                    ><input
+                        type="checkbox"
+                        class="input-checkbox"
+                        name="improve"
+                        id="impOp5"
+                        value="open-source-community"
+                    />
+                    Open Source Community</label
+                >
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea
+                    class="input-textarea"
+                    name="comments"
+                    id="commts"
+                    cols="30"
+                    rows="10"
+                    placeholder="Enter your comment here..."
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" id="submit" class="submit-button" />
+            </div>
+        </form>
+    </body>
+</html>
